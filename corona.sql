@@ -1,5 +1,5 @@
 
-CREATE TABLE COUNTRY_VACCINE
+CREATE TABLE country_vaccine
 (
 	country TEXT,
 	iso_code TEXT,
@@ -33,12 +33,13 @@ CREATE TABLE daily_corona
 	date_country TEXT primary key
 );
 
-SELECT * FROM COUNTRY_VACCINE;
+SELECT * FROM country_vaccine;
  
 SELECT * FROM daily_corona;
 
-SELECT daily_corona.date_country, daily_corona.daily_new_cases, daily_corona.daily_new_deaths, COUNTRY_VACCINE.daily_vaccinations, COUNTRY_VACCINE.total_vaccinations 
+SELECT daily_corona.date_country, daily_corona.daily_new_cases, daily_corona.daily_new_deaths, country_vaccine.daily_vaccinations, 
+country_vaccine.total_vaccinations 
 FROM daily_corona
-INNER JOIN COUNTRY_VACCINE
-ON daily_corona.date_country = COUNTRY_VACCINE.date_country;
+INNER JOIN country_vaccine
+ON daily_corona.date_country = country_vaccine.date_country;
 
