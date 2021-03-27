@@ -23,14 +23,14 @@ CREATE TABLE COUNTRY_VACCINE
 
 CREATE TABLE daily_corona
 (
-date TEXT,
-country TEXT,
-cumulative_total_cases INT,
-daily_new_cases INT,
-active_cases INT,
-cumulative_total_deaths INT,
-daily_new_deaths INT,
-date_country TEXT primary key
+	date TEXT,
+	country TEXT,
+	cumulative_total_cases INT,
+	daily_new_cases INT,
+	active_cases INT,
+	cumulative_total_deaths INT,
+	daily_new_deaths INT,
+	date_country TEXT primary key
 );
 
 SELECT * FROM COUNTRY_VACCINE;
