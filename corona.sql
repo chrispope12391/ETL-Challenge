@@ -1,3 +1,6 @@
+-- DROP TABLE country_vaccine;
+
+-- DROP TABLE daily_corona;
 
 CREATE TABLE country_vaccine
 (
