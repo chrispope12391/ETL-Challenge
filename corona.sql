@@ -37,8 +37,8 @@ SELECT * FROM country_vaccine;
  
 SELECT * FROM daily_corona;
 
-SELECT daily_corona.date_country, daily_corona.daily_new_cases, daily_corona.daily_new_deaths, country_vaccine.daily_vaccinations, 
-country_vaccine.total_vaccinations 
+SELECT daily_corona.date_country, daily_corona.daily_new_cases, daily_corona.daily_new_deaths, 
+country_vaccine.daily_vaccinations, country_vaccine.total_vaccinations 
 FROM daily_corona
 INNER JOIN country_vaccine
 ON daily_corona.date_country = country_vaccine.date_country;
